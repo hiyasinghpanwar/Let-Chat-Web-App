@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="kwitter_room.css" >
+        <script src="kwitter_room.js"></script>
+    </head>
+    <body style="background-color: bisque;">
+        <div class="container">
+            <button id="btn-logout" 
+                    onclick="logout();" 
+                    class="glyphicon glyphicon-log-out btn btn-danger"> Logout</button>
+            <center>
+                <h1 class="header">Kwitter
+                    <sup><img src="mail.jpg" alt="Avatar" id="avatar" width="60" height="60"
+                              style="border: 2px solid rgb(39, 27, 15);
+                                    border-radius: 8px;
+                                    padding: 5px;">
+                    </sup>
+                </h1>
+                <h3 id="user_name"></h3>
+                <div class="form-group input_div_room_page">
+                    <h4 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">#Add Room:</h4>
+                    <input type="text" id="room_name" class="form-control" placeholder="#Room Name">
+                </div>
+                <button onclick="addRoom();" class="btn btn-danger">#Add Room</button>
+                <h3>#TRENDINGROOMS</h3>
+                <div id="output"></div>                
+            </center>
+        </div>
+        <script src="kwitter_room.js"></script>
+    </body>
+</html>
